@@ -1,11 +1,18 @@
 var express = require('express'),
-	bodyParser = require('body-parser'),
-	port = process.env.PORT || 3000
+	
+	port = process.env.PORT || 3000,
+	multer = require('multer'),
 	app = express();
 
 
+app.use(express.static(__dirname + '/public'));
+
+var fileRouter = require('./routers/files.js');
+app.use('/',fileRouter);
+
+
 app.get('/',function (req,res) {
-	res.send("hey from root");
+	res.redirect('views/index.html');
 });
 
 app.listen(port,function(){
