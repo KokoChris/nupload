@@ -1,0 +1,25 @@
+{
+  "name": "nupload",
+  "version": "1.0.0",
+  "description": "Simple Upload Mechanism with node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KokoChris/nupload.git"
+  },
+  "author": "kokoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KokoChris/nupload/issues"
+  },
+  "homepage": "https://github.com/KokoChris/nupload#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "muler": "^1.1.1"
+  }
+}
